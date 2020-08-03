@@ -1,0 +1,80 @@
+git config –global user.name ""
+git config –global user.email ""
+git init
+ls -al 
+git -rf .git
+git config --global list: show all alias
+
+git status
+git add .
+git commit -m ""
+git commit -am "": add and commit, valid only for added files
+git ls -files : know the files tracked by git
+git log --online --graph --decorate --all
+git config --global alias.nameAlias "log --online..."
+git show IDCommit: sohw details about a commit
+git reset HEAD readme.md : remove the readme file from the staging git
+git checkout -- readme.md : rollback to the previous version of the file readme
+git mv exemple.txt demo.txt: rename file already added with git
+git rm FileName: remove file 
+
+git branch : current branche 
+git checkout -b brancheName: create new branche
+git checkout master: switch to master
+git merge brancheName: update the current branch with content of brancheName
+git hist: show logs
+git branch -d brancheName: delete branch
+git branch -a: list all branch in local and github
+
+git stash: standby current work
+git stash list: list all stash
+git stash pop: remove stash
+
+git reset IDCommit --soft: go back to the IDCommit  and keep all changes and files of all commits
+git reset IDCommit --hard: go back to the IDCommit commit without keeping the changes and files of all commits
+
+git reflog: get all logs
+
+git remote -v: list remote repositories in connection with
+git remote add origin https://github.com/...
+git push -u origin master: push code to github
+git pull origin brancheName: get content of brancheName in github to current branch in local
+git push origin :branchName : delete branchName 
+git pull: update repo local with content of repo github
+pull = fetch + merge
+git push -u origin brachName: cretae first time brach in github 
+git fetch: get content from github without merge
+
+git clone URL newProjectName
+git remote set-url origin NewUrl: set new url to pull to github
+
+ssh -keygen -t rsa -C "phrase": generate key ssh
+ssh -T git@github.com : authenticate with ssh to github
+
+git config --global push.default simple : config push to master by default
+
+git tag tagNme: crezt a tag
+git tag --list: show all tags
+git tag -d tagNme: delete tag
+git tag -a tagNme -m "messgae"
+
+git tag tagName brachName : create tag for branch latest commit
+git show tagName: show code change of the latest commit
+git tag -a tagName -m "message" IDCommit: assciate tag to a commit
+git push origin tagName: push tag to github
+git push --tags: push all tags to github
+git tag -d tagName: delete tag in local
+git push origin :tagName : delete tag in github
+git tag -f tagName IDCommit: change tag to another commit
+git push --force origin tagName: change tag to another commit in github
+
+
+
+
+
+
+
+
+
+
+
